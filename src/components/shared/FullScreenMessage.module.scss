@@ -1,0 +1,43 @@
+.container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.ico-heart {
+  fill: var(--red);
+  width: 30px;
+  height: 30px;
+  animation: heart 1.2s infinite linear;
+}
+
+@keyframes heart {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(0.8);
+  }
+  50% {
+    transform: scale(1);
+  }
+  75% {
+    transform: scale(0.8);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.ico-error {
+  width: 30px;
+  height: 30px;
+}

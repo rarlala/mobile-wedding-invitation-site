@@ -9,6 +9,7 @@ import Intro from '@components/sections/Intro'
 import Invitation from '@components/sections/Invitation'
 import ImageGallery from '@components/sections/ImageGallery'
 import Calendar from '@components/sections/Calendar'
+import Map from '@components/sections/Map'
 
 import classNames from 'classnames/bind'
 import styles from './App.module.scss'
@@ -70,6 +71,7 @@ function App() {
       <Invitation message={message.invitation} />
       <ImageGallery images={galleryImages} />
       <Calendar date={date} />
+      <Map location={location} />
     </div>
   )
 }

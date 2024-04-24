@@ -3,9 +3,11 @@ import { useEffect, useState } from 'react'
 import { Wedding } from '@models/wedding'
 
 import FullScreenMessage from '@shared/FullScreenMessage'
-import Heading from './components/sections/Heading'
-import Video from './components/sections/Video'
-import ImageGallery from './components/sections/ImageGallery'
+import Heading from '@components/sections/Heading'
+import Video from '@components/sections/Video'
+import ImageGallery from '@components/sections/ImageGallery'
+import Intro from '@components/sections/Intro'
+import Invitation from '@components/sections/Invitation'
 
 import classNames from 'classnames/bind'
 import styles from './App.module.scss'
@@ -51,14 +53,21 @@ function App() {
     return null
   }
 
-  const { date, galleryImages } = wedding
+  const { date, galleryImages, groom, bride, location, message } = wedding
 
   return (
     <div className={cx('container')}>
       <Heading date={date} />
       <Video />
+      <Intro
+        groomName={groom.name}
+        brideName={bride.name}
+        location={location.name}
+        date={date}
+        message={message.intro}
+      />
+      <Invitation message={message.invitation} />
       <ImageGallery images={galleryImages} />
-      {JSON.stringify(wedding)}
     </div>
   )
 }

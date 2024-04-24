@@ -1,0 +1,11 @@
+@import '@scss/utils.scss';
+
+.container {
+  @include txt-content;
+}
+
+.ico-message {
+  width: 30px;
+  height: 30px;
+  margin: 6px 0;
+}

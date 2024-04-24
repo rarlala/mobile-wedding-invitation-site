@@ -1,0 +1,25 @@
+.dimmed {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  z-index: 999;
+
+  &.open {
+    display: block;
+  }
+}
+
+.ico-close {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  width: 30px;
+  height: 30px;
+  fill: white;
+  cursor: pointer;
+  z-index: 999;
+}

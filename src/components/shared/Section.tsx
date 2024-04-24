@@ -6,11 +6,18 @@ const cx = classNames.bind(styles)
 function Section({
   children,
   className,
+  title,
 }: {
   children: React.ReactNode
   className?: String
+  title?: String
 }) {
-  return <section className={cx(['container', className])}>{children}</section>
+  return (
+    <section className={cx(['container', className])}>
+      {title != null ? <div className={cx('title')}>{title}</div> : null}
+      {children}
+    </section>
+  )
 }
 
 export default Section

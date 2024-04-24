@@ -10,7 +10,7 @@ function Section({
 }: {
   children: React.ReactNode
   className?: String
-  title?: String
+  title?: React.ReactNode
 }) {
   return (
     <section className={cx(['container', className])}>

@@ -3,8 +3,8 @@
 ### 사용 기술
 
 - React + TypeScript + SCSS
-- Pacakge Manager : yarn berry
-- Library : Swiper
+- Package Manager : yarn berry
+- Library : Swiper, date-fns, react-day-picker
 
 <br/>
 

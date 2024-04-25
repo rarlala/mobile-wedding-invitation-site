@@ -2,6 +2,8 @@ import { useEffect, useRef } from 'react'
 
 import { Swiper, SwiperClass, SwiperSlide } from 'swiper/react'
 
+import Dimmed from '@shared/Dimmed'
+
 import style from './ImageViewer.module.scss'
 import classNames from 'classnames/bind'
 
@@ -33,8 +35,12 @@ function ImageViewer({
     }
   }, [selectedIdx])
 
+  if (open === false) {
+    return null
+  }
+
   return (
-    <div className={cx('dimmed', open && 'open')}>
+    <Dimmed>
       <Swiper
         spaceBetween={20}
         slidesPerView={1}
@@ -52,7 +58,7 @@ function ImageViewer({
         })}
       </Swiper>
       <CloseButton onClose={onClose} />
-    </div>
+    </Dimmed>
   )
 }
 

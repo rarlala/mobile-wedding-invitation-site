@@ -1,0 +1,14 @@
+.wrap-share {
+  display: flex;
+  justify-content: center;
+
+  .ico-kakako {
+    margin-right: 10px;
+  }
+
+  .ico-kakako,
+  .ico-link {
+    width: 30px;
+    height: 30px;
+  }
+}

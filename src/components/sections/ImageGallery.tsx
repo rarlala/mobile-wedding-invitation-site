@@ -1,10 +1,11 @@
 import { useState } from 'react'
 
-import style from './ImageGallery.module.scss'
-import classNames from 'classnames/bind'
-
 import Section from '@shared/Section'
 import ImageViewer from '@components/ImageViewer/ImageViewer'
+import generateImageUrl from '@/utils/generateImageUrl'
+
+import style from './ImageGallery.module.scss'
+import classNames from 'classnames/bind'
 
 const cx = classNames.bind(style)
 
@@ -26,7 +27,24 @@ function ImageGallery({ images }: { images: string[] }) {
       <ul className={cx('gallery')}>
         {images.map((img, idx) => (
           <li key={img} onClick={() => handleSelectedIdx(idx)}>
-            <img src={img} alt="wedding" />
+            <picture>
+              <source
+                srcSet={generateImageUrl({
+                  filename: img,
+                  format: 'webp',
+                  option: 'w_240,h_240,q_auto,c_fill',
+                })}
+                type="image/webp"
+              />
+              <img
+                src={generateImageUrl({
+                  filename: img,
+                  format: 'jpg',
+                  option: 'w_240,h_240,q_auto,c_fill',
+                })}
+                alt="wedding"
+              />
+            </picture>
           </li>
         ))}
       </ul>

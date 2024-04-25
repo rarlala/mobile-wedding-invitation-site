@@ -2,6 +2,8 @@ import { useEffect, useRef } from 'react'
 
 import { Swiper, SwiperClass, SwiperSlide } from 'swiper/react'
 
+import generateImageUrl from '@/utils/generateImageUrl'
+
 import Dimmed from '@shared/Dimmed'
 
 import style from './ImageViewer.module.scss'
@@ -30,7 +32,7 @@ function ImageViewer({
   }
 
   useEffect(() => {
-    if (swiper.current) {
+    if (!swiper.current?.destroyed && swiper.current) {
       swiper.current.slideTo(selectedIdx)
     }
   }, [selectedIdx])
@@ -52,7 +54,16 @@ function ImageViewer({
         {images.map((src) => {
           return (
             <SwiperSlide key={src}>
-              <img src={src} alt="wedding" />
+              <picture>
+                <source
+                  srcSet={generateImageUrl({ filename: src, format: 'webp' })}
+                  type="image/webp"
+                />
+                <img
+                  src={generateImageUrl({ filename: src, format: 'jpg' })}
+                  alt="wedding"
+                />
+              </picture>
             </SwiperSlide>
           )
         })}

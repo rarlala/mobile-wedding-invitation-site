@@ -9,9 +9,7 @@
       "address": "경기도 수원시 팔달구 우만동 팔달문로 128\n수원 노블레스 웨딩컨벤션",
       "link": "https://map.kakao.com/?map_type=TYPE_MAP&target=car&rt=,,506715,1050669&rt1=&rt2=%EC%88%98%EC%9B%90%EB%85%B8%EB%B8%94%EB%A0%88%EC%8A%A4%EC%9B%A8%EB%94%A9%EC%BB%A8%EB%B2%A4%EC%85%98&rtIds=,9846217",
       "waytocome": {
-        "metro": [
-          "셔틀버스 운행 → 분당선 수원시청역 5번출구 수시운행"
-        ],
+        "metro": ["셔틀버스 운행 → 분당선 수원시청역 5번출구 수시운행"],
         "bus": [
           "수원역(4번출구) → 동수원병원 하차10, 11-1, 37, 720-2, 83-1 (약 20분)",
           "수원종합버스터미널 → 수병원 하차300, 300-1, 82-1, 80, 88 (약 20분)",
@@ -84,16 +82,16 @@
       "invitation": "소중한 분들을 초대합니다\n살랑이는 바람결에\n사랑이 묻어나는 계절입니다.\n여기 곱고 예쁜 두 사람이 사랑을 맺어\n인생의 반려자가 되려 합니다.\n새 인생을 시작하는 이 자리에 오셔서\n축복해 주시면 감사하겠습니다."
     },
     "galleryImages": [
-      "/assets/images/wedding_01.jpg",
-      "/assets/images/wedding_02.jpg",
-      "/assets/images/wedding_03.jpg",
-      "/assets/images/wedding_04.jpg",
-      "/assets/images/wedding_05.jpg",
-      "/assets/images/wedding_06.jpg",
-      "/assets/images/wedding_07.jpg",
-      "/assets/images/wedding_08.jpg",
-      "/assets/images/wedding_09.jpg",
-      "/assets/images/wedding_10.jpg"
+      "wedding_01",
+      "wedding_02",
+      "wedding_03",
+      "wedding_04",
+      "wedding_05",
+      "wedding_06",
+      "wedding_07",
+      "wedding_08",
+      "wedding_09",
+      "wedding_10"
     ],
     "attendCount": 103
   }

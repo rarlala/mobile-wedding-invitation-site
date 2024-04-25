@@ -15,6 +15,7 @@ function Video() {
         autoPlay
         loop
       >
+        <source src="/assets/main.webm" type="video/webm" />
         <source src="/assets/main.mp4" type="video/mp4" />
       </video>
     </Section>

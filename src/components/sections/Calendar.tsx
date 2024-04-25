@@ -21,12 +21,12 @@ const css = `
         font-weight: bold;
     }
     .rdp-day_selected {
-        background-color: #ea7664;
+        background-color: var(--red);
         font-weight: bold;
         color: #fff;
     }
     .rdp-day_selected:hover {
-        background-color: #ea7664;
+        background-color: var(--red);
     }
 `
 

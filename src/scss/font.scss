@@ -1,7 +1,8 @@
 @font-face {
   font-family: 'NanumBarunPenBold';
   src:
-    url('../assets/fonts/NanumBarunpenB.woff2') format('woff2'),
-    url('../assets/fonts/NanumBarunpenB.woff') format('woff'),
-    url('../assets/fonts/NanumBarunpenB.ttf') format('truetype');
+    url('../assets/fonts/subset-NanumBarunpen-Bold.woff2') format('woff2'),
+    url('../assets/fonts/subset-NanumBarunpen-Bold.woff') format('woff'),
+    url('../assets/fonts/subset-NanumBarunpen-Bold.ttf') format('truetype');
+  font-display: fallback;
 }

@@ -53,8 +53,9 @@
     "bride": {
       "name": "정수지",
       "account": {
-        "bankName": "농협",
-        "accountNumber": "352-0952-4669-11"
+        "bankName": "하나은행",
+        "accountNumber": "283-910267-78707",
+        "kakaopayLink": "https://qr.kakaopay.com/FMLXfZju6"
       },
       "phoneNumber": "01012341234",
       "parents": [

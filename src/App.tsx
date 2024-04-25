@@ -10,6 +10,7 @@ import Invitation from '@components/sections/Invitation'
 import ImageGallery from '@components/sections/ImageGallery'
 import Calendar from '@components/sections/Calendar'
 import Map from '@components/sections/Map'
+import Contact from '@components/sections/Contact'
 
 import classNames from 'classnames/bind'
 import styles from './App.module.scss'
@@ -72,6 +73,7 @@ function App() {
       <ImageGallery images={galleryImages} />
       <Calendar date={date} />
       <Map location={location} />
+      <Contact groom={groom} bride={bride} />
     </div>
   )
 }

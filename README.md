@@ -4,7 +4,8 @@
 
 - React + TypeScript + SCSS
 - Package Manager : yarn berry
-- Library : Swiper, date-fns, react-day-picker
+- Library : Swiper, date-fns, react-day-picker, react-copy-to-clipboard
+- 외부 API : Kakao Map
 
 <br/>
 

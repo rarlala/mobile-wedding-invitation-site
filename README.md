@@ -1,20 +1,28 @@
 # 모바일 청첩장 페이지
 
-### 사용 기술
+## 사용 기술
 
-- React + TypeScript + SCSS
+- React + TypeScript + SCSS + react-query
 - Package Manager : yarn berry
-- Library : Swiper, date-fns, react-day-picker, react-copy-to-clipboard
+- Library : Swiper, date-fns, react-day-picker, react-copy-to-clipboard, webpack-font-preload-plugin
 - 외부 API : Kakao Map
 
 <br/>
 
-### Project 실행 방법
+## Project 실행 방법
 
 - `yarn start`
 
 <br/>
 
-### 구현 화면
+## 구현 화면
+
+### 전체 화면
+
+<img src="https://private-user-images.githubusercontent.com/48057629/325876079-288759d5-df4a-432b-85dd-f81bf9790b49.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTQxMTQ2NDYsIm5iZiI6MTcxNDExNDM0NiwicGF0aCI6Ii80ODA1NzYyOS8zMjU4NzYwNzktMjg4NzU5ZDUtZGY0YS00MzJiLTg1ZGQtZjgxYmY5NzkwYjQ5LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDA0MjYlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwNDI2VDA2NTIyNlomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTA0YTZkYmUyOTk0ZTY3MGNkYzZhNDI3MGY2M2VkYmE3NmEwY2VkMmYwOWE5NjI5ZGI0NGZhOWZhZTgyN2Y4MTUmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.H0An80kO1WkmhkJWt1u-UhIfgXCMdT77QpfpuW_-tRM" width="380px"/>
+
+### 에러 화면
+
+<img src="https://private-user-images.githubusercontent.com/48057629/325876106-1c9c5a67-7ab0-47bb-a943-e141d4cfc6dd.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTQxMTQ2NDQsIm5iZiI6MTcxNDExNDM0NCwicGF0aCI6Ii80ODA1NzYyOS8zMjU4NzYxMDYtMWM5YzVhNjctN2FiMC00N2JiLWE5NDMtZTE0MWQ0Y2ZjNmRkLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDA0MjYlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwNDI2VDA2NTIyNFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWI1N2M5NDNiYjgwMDU5OWJlNTkzZGE5MWM5YzI1YWMwZjkxOGE0NjJmMjQxYmFlMmI5MTYwNDM3NmVjMDQwZDcmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.wVtyZGbnG2VWNIZ98vsOds25Li2uSoq3idFffeBtpm8" width="380px">
 
 <!-- ### Trouble Shotting -->

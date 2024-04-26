@@ -1,3 +1,4 @@
+import { memo } from 'react'
 import { DayPicker } from 'react-day-picker'
 import { parseISO, format } from 'date-fns'
 import { ko } from 'date-fns/locale'
@@ -63,4 +64,4 @@ function Calendar({ date }: { date: string }) {
   )
 }
 
-export default Calendar
+export default memo(Calendar)
